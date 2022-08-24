@@ -66,13 +66,12 @@
 <!-- PHP -->
 <h2><?php echo date('j F Y H:i:s') ?></h2>
 
-</body>
-
-<!-- JavaScript> -->
+    <!-- JavaScript> -->
 <script>
     document.getElementById('hider').onclick = function() {
         document.getElementById('hide').style.display = 'none';
     }
 </script>
 
+</body>
 </html>
