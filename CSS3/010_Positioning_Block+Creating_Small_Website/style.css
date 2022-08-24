@@ -1,0 +1,158 @@
+/*********************************
+ * style.css
+ * 
+ * LESSONS for CSS3
+ * from GOSHA DUDAR (2015)
+ * -------------------------------
+ * Writing by sgiman @ 2022, aug
+ *********************************/
+
+/* --- common --- */
+* { /* применяется абсалютно ко всему документу */
+    /* font-size: 16px; */
+    text-decoration: none;
+}
+html  {
+    background-color: #f9ddae;                              /* основной фон */
+    font-family: Roboto, sans-serif;
+}
+/* body {background-color: #fbf5eb;} */
+
+/* --- headers --- */
+h1 {color: red;}                                            /* for tag */
+h3 {color: darkgreen; }
+h3.style {color: chocolate;}                                /* class - only for h3 */
+#header {color: brown;}                                     /* for id1 */
+#header_1 {color: green;}                                   /* for id2 */
+
+/* --- p --- */
+p.style {background-color: #620101; color: #fbf5eb}         /* class - only for p */
+p i {
+    color: #9ae3b7;
+    size: 24px;
+    font-family: Impact, sans-serif;
+}
+p#example:first-letter {
+    color: red;
+}
+p#example:first-line {
+    color: #ffc07f;
+}
+p:hover {
+    background-color: blueviolet;
+}
+p:active {
+    background-color: #3a7cff;
+}
+
+/* --- href --- */
+.href {
+    color: #31bb82;
+    /* text-decoration: none; */
+}
+.href:hover {
+    color: #620101;
+}
+.href:visited {
+    color: #000;
+}
+
+/* --- textStyle --- */
+#textStyle:hover {
+    background-color:  #620101;
+}
+#textStyle {
+    /* font-size: 16px; */
+    font-size: 1.1em;
+    font-weight: normal;
+    font-family: "Comic Sans MS", sans-serif;
+    /* text-decoration: underline; */
+    text-align: left;
+    text-transform: capitalize;
+    /* word-spacing: normal; */
+    letter-spacing: 10px;
+    line-height: 200%;
+}
+#textStyle span {text-transform: none;}
+
+#testBlock {
+    border: 2px dashed silver;
+    /* height: 240px; */
+    width: 480px;
+    color: #620101;
+    background-color: #f7f7f7;
+    /* margin: 10px;*/
+    margin: 10px 10px 10px 10px;    /* top, right, bottom, left */ /* внешние отступы */
+    padding: 20px;                  /* внутренние отступы (отбивка) */
+    border-radius: 30px;
+    /* border-bottom: 3px dashed #620101; */
+    border-bottom: 3px dashed red;
+    float: right;                   /* коррекция размещения спарва */
+}
+
+/************ SITE PAGE ************/
+
+header {
+    width: calc(100% - 20px);       /* new! calculation */
+    height: 70px;
+    background-color: #fff;
+    border-top: 2px dashed silver;
+    border-bottom: 2px solid silver;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #620101;
+    font-family: "Comic Sans MS", sans-serif;
+    float: left;                    /* коррекция слева */
+}
+
+article, aside {
+    background-color: #f7f7f7;
+    height: 550px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;         /* ширины на всю длину экрана */
+    margin-top: 20px;
+    float: left;                    /* коррекция слева */
+}
+
+article {
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+/*
+.clear {
+    clear: both;  - очистить "плавающее" размещение float c 2-х сторон
+}
+body {
+    position: relative; - относительный для всех
+    height: 3000px;
+}
+*/
+
+aside {
+    width: 25%;                     /* for aside & article */
+    /*
+    позиционирование: static, absolute, relative, fixed
+    position: fixed;
+    top: 30px;
+    left: 100px;
+    */
+}
+
+footer {
+    width: calc(100% - 20px);
+    height: 70px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-top: 2px dashed silver;
+    border-bottom: 2px solid silver;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #620101;
+    font-family: "Comic Sans MS", sans-serif;
+    float: left;                    /* коррекция слева */
+    margin-bottom: 20px;
+}

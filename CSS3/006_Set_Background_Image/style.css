@@ -1,0 +1,64 @@
+/*********************************
+ * style.css
+ * 
+ * LESSONS for CSS3
+ * from GOSHA DUDAR (2015)
+ * -------------------------------
+ * Writing by sgiman @ 2022, aug
+ *********************************/
+
+* { /* применяется абсалютно ко всему документу */
+    /* font-size: 16px; */
+    text-decoration: none;
+}
+
+html  {
+    background: url('images/bg4_small.jpg') repeat-x #fbf5eb center left;
+    /* background: url('images/bg3.jpg') no-repeat #fbf5eb center top;*/
+    /* background-color: #fbf5eb; */
+    /* background-image: url('images/bg3.jpg'); */
+    /* background-repeat: no-repeat */
+    font-family: Roboto, sans-serif;
+}
+
+/* body {background-color: #fbf5eb;} */
+
+/* --- headers --- */
+h1 {color: red;}                                            /* for tag */
+h3 {color: darkgreen; }
+h3.style {color: chocolate;}                                /* class - only for h3 */
+#header {color: brown;}                                     /* for id1 */
+#header_1 {color: green;}                                   /* for id2 */
+
+
+/* --- p --- */
+p.style {background-color: #620101; color: #fbf5eb}         /* class - only for p */
+p i {
+    color: #9ae3b7;
+    size: 24px;
+    font-family: Impact, sans-serif;
+}
+p#example:first-letter {
+    color: red;
+}
+p#example:first-line {
+    color: #ffc07f;
+}
+p:hover {
+    background-color: blueviolet;
+}
+p:active {
+    background-color: #3a7cff;
+}
+
+/* --- href --- */
+.href {
+    color: #31bb82;
+    /* text-decoration: none; */
+}
+.href:hover {
+    color: #620101;
+}
+.href:visited {
+    color: #000;
+}

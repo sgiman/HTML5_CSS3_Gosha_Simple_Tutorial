@@ -1,0 +1,24 @@
+body {
+    background: #f7f7f7;
+    font-family: "Arial", serif;
+}
+h1 {
+    color: red;
+    text-align: center;
+    font-family: "Roboto Condensed", serif;
+    font-size: 42px;
+    font-weight: bold;
+}
+h2 {
+    color: blue;
+    text-align: center;
+    font-family: "Roboto Condensed", serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+input {
+    margin-bottom: 16px;
+    margin-top: 10px;
+    font-family: "Roboto Condensed", serif;
+    font-weight: bold;
+}

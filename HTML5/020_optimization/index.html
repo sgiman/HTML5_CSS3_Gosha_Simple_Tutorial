@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Тестовая страница" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>select & options (LESSON 16)</title>
+</head>
+
+<body>
+<div class="center-block-main content">
+    <br />
+    <hr />
+    <div style="text-align: center"><h1>020 - Оптимизация сайта под разные браузеры</h1></div>
+    <hr />
+
+    <!------------------------------ 006 ------------------------------>
+    <h2>006 - Теги для текста (продолжение + выводы)</h2>
+    <hr />
+    <h1>ЗАГОЛОВОК 1 (style)</h1>
+    <h2>Заголовок 2 (style)</h2>
+    <h3>Заголовок 3 (style)</h3>
+    <h4>Заголовок 4</h4>
+    <h5>Заголовок 5</h5>
+    <h6>Заголовок 6</h6>
+
+    <hr />
+    <!-- old variant for text (b, i, strong, em, strike, u, abbr) -->
+    <p>этот <b>текст</b> <i>будет</i> <strike>абзацем (b)(i)</strike></p>
+    <!-- new variant for text -->
+    <p>этот <strong>текст</strong> <em>будет</em><strike>абзацем (strong)(em)</strike></p>
+    <!-- абревиатура (подсказка) -->
+    <p> <abbr title="example abbreviation">html5 page (abbreviation)</abbr></p>
+
+    <hr />
+    <!-- address new varariant (address) -->
+    <address>сша, штат вашингтон (address)</address>
+    <!-- address italic -->
+    <em>сша, штат вашингтон (em)</em>
+    <p>этот <strike><strong><u><em>текст пробный</em></u></strong></strike></p>
+    <p>этот <del><strong><u><em>текст пробный</em></u></strong></del></p>
+
+    <hr />
+    <!-- text small -->
+    <small>Этот текст маленький (small)</small>
+    <big>Этот текст большой (big)</big>
+
+    <hr />
+    <!-- Текст, как есть (pre) -->
+
+    <pre>
+
+        ░██████╗░██████╗░██╗███╗░░░███╗░█████╗░███╗░░██╗
+        ██╔════╝██╔════╝░██║████╗░████║██╔══██╗████╗░██║
+        ╚█████╗░██║░░██╗░██║██╔████╔██║███████║██╔██╗██║
+        ░╚═══██╗██║░░╚██╗██║██║╚██╔╝██║██╔══██║██║╚████║
+        ██████╔╝╚██████╔╝██║██║░╚═╝░██║██║░░██║██║░╚███║
+        ╚═════╝░░╚═════╝░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝
+
+        <a href = https://fsymbols.com/ru/generatory/>https://fsymbols.com/ru/generatory/</a>
+    </pre>
+
+    <pre>⠀⠀
+                ⠀⠀⠀⣠⣤⣶⣶⣦⣤⣄⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⢟⡟⡀⣠⢆⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣄
+        ⠀⠀⠀⠀⠀⠀⣸⣿⣿⡿⣵⣿⣿⢟⠏⠀⠹⣿⡆⢂⠄⠀⠀⠀⠀⠀⠀⠀⠀⠹
+        ⠀⠀⠀⠀⠀⣰⣿⣿⣿⣃⣷⣫⢢⣃⢀⢀⣂⣴⢣⠛⣶⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        ⠀⢀⣀⣤⣾⣿⣿⣿⣿⣡⠋⢻⠉⢉⠇⠈⣍⠍⠀⣏⡿⠀⠀⠀⢀⡀⠀⠀⠀⠀
+        ⠉⠙⠛⠻⣿⣿⣿⣿⣿⡏⣷⡆⠀⠈⠐⠂⠁⠀⣿⣿⡁⠀⠀⠀⠀⠙⠷⡄⠀⢄
+        ⣠⣤⣤⣶⣿⣿⣿⣿⣿⣿⣾⢿⣴⠀⡒⠖⠂⣸⡟⠏⠀⠀⠀⠀⠀⠀⠀⠈⠢⠀
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡥⠄⣄⡀⠠⠋⠀⠀⠀⠠⣄⣀⠀⠀⠀⠀⠀⠀
+        ⣿⣿⣿⣎⣿⣿⣿⣿⣿⣿⣿⣿⠡⠀⠀⠀⡀⢠⠀⠀⠀⠀⠀⠉⠉⠀⣀⡀⠀⠀
+        ⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠛⡁⢄⡔⡀⢤⢄⠈⡔⠒⠐⠢⡀⠀⠀⠀⣽⢟⡽⠀
+        ⣿⣿⣷⣿⣿⠋⢄⠀⠀⠀⠀⢎⠂⠀⠀⠀⠊⠇⠀⠀⠀⠀⠁⢂⠀⢀⡀⠁⠁⢉
+        ⣿⣿⣿⡏⠂⠀⠀⠁⡀⠀⠀⠀⠀⠈⠐⠂⡀⠀⠀⠀⠀⠀⠀⠀⠈⢺⣿⣾⠀⡶
+        ⣿⣿⠟⠁⠀⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⡏⢐⠿
+
+        <a href=http://text-image.ru/index/generator_risunkov_iz_simvolov/0-22>http://text-image.ru/index/generator_risunkov_iz_simvolov/0-22</a>
+    </pre>
+
+    <!------------------------------ 010 ------------------------------>
+    <h2>010 - Отображение изображений в HTML</h2>
+    <hr />
+    <br />
+
+    <img src="images/002.png" />
+    <img src="images/001.png" />
+    <hr />
+    <br />
+    <img src="https://funart.pro/uploads/posts/2021-03/1617064736_41-p-oboi-skalistie-gori-ssha-43.jpg" width="100px" height="100px" title="Иконка: Каменистые горы" alt="Каменистые горы">
+    <img src="https://funart.pro/uploads/posts/2021-03/1617064736_41-p-oboi-skalistie-gori-ssha-43.jpg" align="middle" width="50%" height="50%" title="Фото: Каменистые горы" alt="Каменистые горы">
+
+    <h2>011 - Создание таблиц в HTML</h2>
+    <hr />
+    <br />
+
+    <!--
+    caption(заголовок),
+    table(блок таблицы),
+    tbody(тело таблицы),
+    thead(блок полей),
+    th(table head),
+    tr(table row),
+    td(table data)
+    -->
+
+    <!-- ТABLE 2 -->
+    <table class="demo" border="1" cellpadding="7" cellspacing="0">
+        <caption><b>Таблица размеров обуви</b></caption>
+        <thead>
+        <tr>
+            <th>Россия</th>
+            <th>Великобритания</th>
+            <th>Европа</th>
+            <th>Длина ступни, см</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>&nbsp;34,5</td>
+            <td>&nbsp;3,5</td>
+            <td>&nbsp;36</td>
+            <td>&nbsp;23</td>
+        </tr>
+        <tr>
+            <td>&nbsp;35,5</td>
+            <td>&nbsp;4</td>
+            <td>&nbsp;36⅔</td>
+            <td>&nbsp;23-23,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;36</td>
+            <td>&nbsp;4,5</td>
+            <td>&nbsp;37⅓</td>
+            <td>&nbsp;23,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;36,5</td>
+            <td>&nbsp;5</td>
+            <td>&nbsp;38</td>
+            <td>&nbsp;24</td>
+        </tr>
+        <tr>
+            <td>&nbsp;37</td>
+            <td>&nbsp;5,5</td>
+            <td>&nbsp;38⅔</td>
+            <td>&nbsp;24,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;38</td>
+            <td>&nbsp;6</td>
+            <td>&nbsp;39⅓</td>
+            <td>&nbsp;25</td>
+        </tr>
+        <tr>
+            <td>&nbsp;38,5</td>
+            <td>&nbsp;6,5</td>
+            <td>&nbsp;40</td>
+            <td>&nbsp;25,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;39</td>
+            <td>&nbsp;7</td>
+            <td>&nbsp;40⅔</td>
+            <td>&nbsp;25,5-26</td>
+        </tr>
+        <tr>
+            <td>&nbsp;40</td>
+            <td>&nbsp;7,5</td>
+            <td>&nbsp;41⅓</td>
+            <td>&nbsp;26</td>
+        </tr>
+        <tr>
+            <td>&nbsp;40,5</td>
+            <td>&nbsp;8</td>
+            <td>&nbsp;42</td>
+            <td>&nbsp;26,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;41</td>
+            <td>&nbsp;8,5</td>
+            <td>&nbsp;42⅔</td>
+            <td>&nbsp;27</td>
+        </tr>
+        <tr>
+            <td>&nbsp;42</td>
+            <td>&nbsp;9</td>
+            <td>&nbsp;43⅓</td>
+            <td>&nbsp;27,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;43</td>
+            <td>&nbsp;9,5</td>
+            <td>&nbsp;44</td>
+            <td>&nbsp;28</td>
+        </tr>
+        <tr>
+            <td>&nbsp;43,5</td>
+            <td>&nbsp;10</td>
+            <td>&nbsp;44⅔</td>
+            <td>&nbsp;28-28,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;44</td>
+            <td>&nbsp;10,5</td>
+            <td>&nbsp;45⅓</td>
+            <td>&nbsp;28,5-29</td>
+        </tr>
+        <tr>
+            <td>&nbsp;44,5</td>
+            <td>&nbsp;11</td>
+            <td>&nbsp;46</td>
+            <td>&nbsp;29</td>
+        </tr>
+        <tr>
+            <td>&nbsp;45</td>
+            <td>&nbsp;11,5</td>
+            <td>&nbsp;46⅔</td>
+            <td>&nbsp;29,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;46</td>
+            <td>&nbsp;12</td>
+            <td>&nbsp;47⅓</td>
+            <td>&nbsp;30</td>
+        </tr>
+        <tr>
+            <td>&nbsp;46,5</td>
+            <td>&nbsp;12,5</td>
+            <td>&nbsp;48</td>
+            <td>&nbsp;30,5</td>
+        </tr>
+        <tr>
+            <td>&nbsp;47</td>
+            <td>&nbsp;13</td>
+            <td>&nbsp;48⅔</td>
+            <td>&nbsp;31</td>
+        </tr>
+        <tr>
+            <td>&nbsp;48</td>
+            <td>&nbsp;13,5</td>
+            <td>&nbsp;49⅓</td>
+            <td>&nbsp;31,5</td>
+        </tr>
+        <tbody>
+    </table>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- ТABLE 2 -->
+    <table border="1" cellpadding="7" cellspacing="0">
+        <tr>
+            <td colspan="3" bgcolor ="#D3EDF6" align="center">Ячейка 1</td>
+        </tr>
+        <tr>
+            <td valign="middle" align="center">Ячейка 2</td>
+            <td valign="middle" width="98%" valign="top">Ячейка 3</td>
+            <td valign="middle" width="2%" valign="top">Ячейка 4</td>
+        </tr>
+    </table>
+
+    <!------------------------------ 014 ------------------------------>
+    <h2>014 - Поля ввода в HTML5</h2>
+    <hr />
+    <br />
+
+    <!-- FORM INPUT -->
+    <form name="name" action="" method="post">
+        <!--<input type="text" value="Поиск..." />-->
+        <lable for="name">Введите ваше имя: </lable>
+        <input type="text" placeholder="Имя..." name="name" id="name" title="Введите своё имя" maxlength="21" />
+        <br />
+        <lable for="date">День рождения: </lable>
+        <input type="date" name="date" id="date" title="Введете дату рождения"/>
+        <br />
+        <lable for="url">URL: </lable>
+        <input type="url" name="url" id="url" title="Введите url cайта"/>
+        <br />
+        <lable for="tel">Телефон: </lable>
+        <input type="tel" name="tel" id="tel" title="Введите номер телефона"/>
+        <br />
+        <lable for="range">Диапазон: </lable>
+        <input type="range" name="range" id="range" title="Введите диапазон"/>
+        <br />
+        <lable for="male">Mужской: </lable>
+        <input type="radio" name="state" id="male" />
+        <br />
+        <lable for="female">Женский: </lable>
+        <input type="radio" name="state" id="female" />
+        <br />
+        <lable for="password">Пароль: </lable>
+        <input type="password" name="password" id="password" title="Введите пароль" />
+        <br />
+        <lable for=number">Число: </lable>
+        <input type="number" name="number" id="number" title="Введите число" />
+        <br />
+        <lable for=file">Файл: </lable>
+        <input type="file" name="file" id="file" title="Выберите файл" />
+        <br />
+        <lable for=color">Цвет: </lable>
+        <input type="color" name="color" id="color" title="Выберите цвет" />
+        <br />
+        <lable for="checkbox">Со всем согласен (1): </lable>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <lable for="checkbox">Со всем согласен (2): </lable>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <lable for="checkbox">Со всем согласен (3): </lable>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <lable for="checkbox">Со всем согласен (4): </lable>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <input type="button" value="Отправить button" /> <!-- без перезагрузки для ajax -->&nbsp;&nbsp;
+        &nbsp;&nbsp;
+        <input type="submit" value="Отправить submit" /> <!-- с перезагрузкой для php -->
+        &nbsp;&nbsp;
+        <input type="reset" value="Очистить" /> <!-- очистить всю форму без перезагрузки -->
+    </form>
+
+    <!------------------------------ 015 ------------------------------>
+    <h2>015 - Использование textarea и тега button</h2>
+    <hr />
+    <br />
+
+    <!-- TEXTAREA -->
+    <textarea placeholder="Example"></textarea>
+
+    <br />
+    <hr />
+    <br />
+
+    <form action="" method="post">
+        <p><b>Введите ваш отзыв: </b></p>
+        <textarea rows="10" cols="58" name="text"></textarea>
+        <p><input type="submit" value="Отправить (input/submit)" /></p>
+        <p><input type="button" value="Отправить (input/button)" /></p>
+        <p><button>Отправить (button)</button></p>
+    </form>
+
+    <!------------------------------ 016 ------------------------------>
+    <h2>016 - Селектор выбора HTML. Теги select и option</h2>
+    <hr />
+    <br />
+
+    <!-- SELECT-OPTIONS -->
+    <p>
+        <select>
+            <option>Example 1</option>
+            <option>Example 2</option>
+            <option selected="selected">Example 3</option>
+            <option>.........</option>
+        </select>
+    </p>
+    <br />
+    <hr />
+    <br />
+
+    <h3>Multiple options</h3>
+    <form action="" method="post">
+        <select size=5 multiple="multiple" name="hero[]">
+            <option disabled="disabled">Выберите героя</option>
+            <option value="Чебурашка">Чебурашка</option>
+            <option selected="selected" value="Крокодил Гена">Крокодил Гена</option>
+            <option value="Шапокляк">Шапокляк</option>
+            <option value="Крыса Лариса">Крыса Лариса</option>
+        </select>
+        <p><input type="submit" value="Отправить"></p>
+
+        <h3>Single option</h3>
+        <select>
+            <option value="1">Опция 1</option>
+            <option selected="selected" value="2">Опция 2</option>
+            <option value="3">Опция 3</option>
+            <option value="4">Опция 4</option>
+        </select>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+
+    <!------------------------------ 016 ------------------------------>
+    <h2>016 - Селектор выбора HTML. Теги select и option</h2>
+    <hr />
+    <br />
+
+    <!-- SELECT-OPTIONS -->
+    <p>
+        <select>
+            <option>Example 1</option>
+            <option>Example 2</option>
+            <option selected="selected">Example 3</option>
+            <option>.........</option>
+        </select>
+    </p>
+    <br />
+    <hr />
+    <br />
+
+    <h3>Multiple options</h3>
+    <form action="" method="post">
+        <select size=5 multiple="multiple" name="hero[]">
+            <option disabled="disabled">Выберите героя</option>
+            <option value="Чебурашка">Чебурашка</option>
+            <option selected="selected" value="Крокодил Гена">Крокодил Гена</option>
+            <option value="Шапокляк">Шапокляк</option>
+            <option value="Крыса Лариса">Крыса Лариса</option>
+        </select>
+        <p><input type="submit" value="Отправить"></p>
+
+        <h3>Single option</h3>
+        <select>
+            <option value="1">Опция 1</option>
+            <option selected="selected" value="2">Опция 2</option>
+            <option value="3">Опция 3</option>
+            <option value="4">Опция 4</option>
+        </select>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+
+    <!------------------------------ 017 ------------------------------>
+    <h2>017 - Специальные HTML5 теги</h2>
+    <hr />
+    <br />
+
+    <!-- Шапка сайта (верхняя часть сайта) -->
+    <header><h3>Шапка (header)</h3></header>
+
+    <!-- Меню -->
+    <h3>Meню (menu)</h3>
+    <menu>
+        <li>Русская кухня. Уха бурлацкая</li>
+        <li>Украинская кухня. Вареники</li>
+        <li>Молдавская кухня. Паприкаш</li>
+        <li>Кавказская кухня. Суп-харчо</li>
+        <li>Прибалтийская кухня. Вертиняй</li>
+    </menu>
+
+    <!-- Контент -->
+    <article>
+
+        <h3>Статья, новость, пост.... (article)</h3>
+        <p>AUDIO</p>
+        <audio controls="controls" autoplay="autoplay" loop="loop">
+            <source src="https://scsmed.com.ua/video/music-wordpress-theme-sample-01.mp3" />
+        </audio>
+
+        <p>VIDEO</p>
+        <video controls="controls" width="640">
+            <source src="https://scsmed.com.ua/video/videohive.mp4" />
+        </video>
+
+    </article>
+
+    <!-- Боковая панель -->
+    <aside><h3>Боковая панель (aside)</h3></aside>
+
+    <!-- Footer (низ сайта) -->
+    <footer><h3>Низ сайта (footer)</h3></footer>
+
+    <!------------------------------ 018 ------------------------------>
+    <h2>018 - Теги sub и sup</h2>
+    <hr />
+    <br />
+
+    <!-- H2O-->
+    <h3>H<sub>2</sub>O</h3>
+    <!-- 42 -->
+    <h3>4<sup>2</sup></h3>
+
+
+    <!------------------------------ 019 ------------------------------>
+    <h2>019 - Специальные HTML5 теги</h2>
+    <hr />
+
+    <!-- details, summary -->
+    <h3>details, summary</h3>
+    <details>
+        <summary>Информация об авторе</summary>
+        <p>Бердер Родригез</p>
+    </details>
+
+    <p>Проверка 123 <mark>выделено</mark> 123 проверка</p>
+
+    <hr />
+
+    <!-- ruby, rt -->
+    <h3>ruby, rt</h3>
+    <h3>
+        <ruby>
+            你<rt>nǐ</rt> <!-- ты -->
+            &nbsp;
+            好<rt>hǎo</rt><!-- хороший -->
+        </ruby>
+
+    </h3><hr />
+
+    <!-- PROGRESS -->
+    <h3>progress</h3>
+    <progress max="100" value="25">
+        Загружено на <span id="value">25</span>
+    </progress>
+
+    <br /><br /><hr />
+
+    <!-- OUTPUT -->
+    <h3>output</h3>
+    <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+        <p>Введите длину в сантиметрах: <input type="number" name="cm" autofocus></p>
+        <p>Длина в дюймах: <output name="result">0</output></p>
+    </form>
+
+    <br />
+
+    <hr />
+    <br />
+    <h1>******* END *******</h1>
+    <br />
+    <br />
+    <!------------- END PHP ------------->
+
+</div> <!-- center-block-main content -->
+</body>
+</html>

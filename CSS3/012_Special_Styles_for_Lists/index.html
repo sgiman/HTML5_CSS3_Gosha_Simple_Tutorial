@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Test Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="sgiman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Пишем стили</title>
+</head>
+
+<body>
+    <header>
+        <h2>Шапка</h2>
+    </header>
+
+    <article>
+        <h1>Заголовок первого уровня (h1)</h1>
+        <h1 id="header">Заголовок первого уровня (id1)</h1>
+        <p class="style">Здесь находится текст параграфа</p>
+        <h3 class="style">Заголовок 3-го уровня</h3>
+        <h1 id="header_1">Заголовок первого уровня (id2)</h1>
+        <h3 class="style">Заголовок 3-го уровня</h3>
+
+        <a href="#" class="href" title="Проверка 1 (a href 1)">Стили для ссылки 1 (a-href-1)</a><br>
+        <a href="#" class="href" title="Проверка 2 (a href 2)">Стили для ссылки 2 (a-href-2)</a>
+
+        <p>Абзац p-1</p>
+        <p>Абзац p-2</p>
+        <p>Абзац p-3</p>
+
+        <p id="textStyle" class="style">
+            Eщё немного <i>текста</i> здесь!!!<br>
+            <span>Eщё немного <i>текста</i> здесь!!!</span>
+        </p>
+
+        <div id="testBlock">Example</div>
+
+        <span class="spanBlock"><h3>Что такое Lorem Ipsum?</h3>
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов,
+            используя Lorem Ipsum для распечатки образцов.
+            Lorem Ipsum не только успешно пережил без заметных изменений пять веков,
+            но и перешагнул в электронный дизайн.
+            Его популяризации в новое время послужили публикация
+            листов Letraset с образцами Lorem Ipsum в 60-х годах и,
+            в более недавнее время, программы электронной вёрстки типа Aldus PageMaker,
+            в шаблонах которых используется Lorem Ipsum.</span>
+        <!-- <span class="spanBlock">Text-span-2</span>
+        <span class="spanBlock">Text-span-3</span> -->
+
+    </article>
+
+    <img src=" "/>
+
+    <!-- <div class="clear"></div> -->
+    <aside>
+        <h2>Sidebar</h2>
+        <ul>
+            <li>Элемент 1</li>
+            <li>Элемент 2</li>
+            <li>Элемент 3</li>
+            <li>Элемент 4</li>
+            <li>Элемент 5</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <h2>Футер</h2>
+    </footer>
+
+    <!-- CSS ANIMATION -->
+    <script>
+        $(window).scroll(function() {
+            $('#animatedElement').each(function(){
+                var imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow+400) {
+                    $(this).addClass("slideUp");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+<!---------------------------------------------------
+Animation CSS & JS (samples)
+http://www.justinaguilar.com/animations/index.html#
+---------------------------------------------------->

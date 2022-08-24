@@ -1,0 +1,90 @@
+/*********************************
+ * style.css
+ * 
+ * LESSONS for CSS3
+ * from GOSHA DUDAR (2015)
+ * -------------------------------
+ * Writing by sgiman @ 2022, aug
+ *********************************/
+
+/* --- MAIN --- */
+* { /* применяется абсалютно ко всему документу */
+    /* font-size: 16px; */
+    text-decoration: none;
+}
+html  {
+    background-color: #fbf5eb;
+    font-family: Roboto, sans-serif;
+}
+/* body {background-color: #fbf5eb;} */
+
+/* --- headers --- */
+h1 {color: red;}                                            /* for tag */
+h3 {color: darkgreen; }
+h3.style {color: chocolate;}                                /* class - only for h3 */
+#header {color: brown;}                                     /* for id1 */
+#header_1 {color: green;}                                   /* for id2 */
+
+/* --- p --- */
+p.style {background-color: #620101; color: #fbf5eb}         /* class - only for p */
+p i {
+    color: #9ae3b7;
+    size: 24px;
+    font-family: Impact, sans-serif;
+}
+p#example:first-letter {
+    color: red;
+}
+p#example:first-line {
+    color: #ffc07f;
+}
+p:hover {
+    background-color: blueviolet;
+}
+p:active {
+    background-color: #3a7cff;
+}
+
+/* --- href --- */
+.href {
+    color: #31bb82;
+    /* text-decoration: none; */
+}
+.href:hover {
+    color: #620101;
+}
+.href:visited {
+    color: #000;
+}
+
+/* --- textStyle --- */
+#textStyle:hover {
+    background-color:  #620101;
+}
+#textStyle {
+    /* font-size: 16px; */
+    font-size: 1.1em;
+    font-weight: normal;
+    font-family: "Comic Sans MS", sans-serif;
+    /* text-decoration: underline; */
+    text-align: left;
+    text-transform: capitalize;
+    /* word-spacing: normal; */
+    letter-spacing: 10px;
+    line-height: 200%;
+}
+#textStyle span {text-transform: none;}
+
+#testBlock {
+    border: 2px dashed silver;
+    height: 240px;
+    width: 480px;
+    color: #620101;
+    background-color: #f7f7f7;
+    /* margin: 10px;*/
+    margin: 10px 10px 10px 10px;    /* top, right, bottom, left */ /* внешние отступы */
+    padding: 20px;                  /* внутренние отступы (отбивка) */
+    border-radius: 30px;
+    /* border-bottom: 3px dashed #620101; */
+    border-bottom: 3px dashed red;
+}
